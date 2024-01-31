@@ -1,4 +1,7 @@
+
+"use client"; // This is a client component 
 import * as React from 'react';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -6,8 +9,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link } from '@mui/material';
 import "./navbar.module.css"
+import { Link } from '@mui/material';
 
 export default function Navbar() {
   return (
@@ -26,9 +29,13 @@ export default function Navbar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Blogs
           </Typography>
-          <Button color="inherit">Sign Up</Button>
-          <Button color="inherit">Login</Button>
-           
+          <Link href = "http://localhost:3000/component/signup" color="inherit" class='button-signup'>
+             Sign Up
+          </Link>
+          <Link href = "http://localhost:3000/component/signup" color="inherit">
+          Login
+          </Link>
+          
         </Toolbar>
       </AppBar>
     </Box>

@@ -7,3 +7,15 @@
 .MuiLink-root{
     color: white;
 }
+.MuiLink-underlineAlways{
+    display: none;
+}
+.button-signup{
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+.css-xdxgn1-MuiTypography-root-MuiLink-root {
+    text-decoration: none;
+    margin: 10px;
+}

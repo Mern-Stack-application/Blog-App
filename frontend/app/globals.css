@@ -2,3 +2,11 @@ body{
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
+.css-xdxgn1-MuiTypography-root-MuiLink-root {
+  text-decoration: none;
+  margin: 10px;
+}
