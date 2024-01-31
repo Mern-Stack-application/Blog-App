@@ -89,7 +89,7 @@ function ViewBlog() {
         >
           Something here to give the footer a purpose!
         </Typography>
-        {/* You can keep the Copyright component as is */}
+        
       </Box>
     </ThemeProvider>
   );

@@ -18,8 +18,6 @@ import { Copyright } from '@mui/icons-material';
 import Navbar from '../navbar/Navbar';
 
 
-// TODO remove, this demo shouldn't need to reset the theme.
-
 export default function SignUp() {
     const handleSignUp = async (event) => {
       event.preventDefault();

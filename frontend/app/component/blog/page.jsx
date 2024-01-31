@@ -51,7 +51,7 @@ export default function Blog() {
     });
   };
 
-  // page.jsx - Update the handleSubmit function
+  // Update the handleSubmit function
 const handleSubmit = async (e) => {
     e.preventDefault();
   
@@ -62,7 +62,7 @@ const handleSubmit = async (e) => {
   
       console.log('Blog added successfully:', response.data);
   
-      // Optionally, you can redirect the user or perform other actions here
+      
     } catch (error) {
       console.error('Error adding blog:', error.message);
     }
