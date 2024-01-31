@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 import mongoose from "mongoose";
 import authRoute from "./routes/auth.js"
 import blogRoute from "./routes/blog.js"
@@ -7,7 +8,15 @@ import userRoute from "./routes/users.js"
 import cookieParser from "cookie-parser";
 
 const app  = express()
+app.use(cors())
 dotenv.config()
+
+const corsOptions ={
+    origin:'http://localhost:3000', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
 
 const connect = async () => {
     try {
