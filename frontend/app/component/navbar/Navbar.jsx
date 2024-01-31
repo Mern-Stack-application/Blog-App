@@ -32,7 +32,7 @@ export default function Navbar() {
           <Link href = "http://localhost:3000/component/signup" color="inherit" class='button-signup'>
              Sign Up
           </Link>
-          <Link href = "http://localhost:3000/component/signup" color="inherit">
+          <Link href = "http://localhost:3000/component/login" color="inherit">
           Login
           </Link>
           

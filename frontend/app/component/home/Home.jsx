@@ -3,6 +3,7 @@
 // Import axios at the top of your file
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useNavigation } from 'next/navigation';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -100,9 +101,14 @@ export default function Home() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Link href = "/component/blogView">
-                       <Button size="small">View</Button>
-                    </Link>
+                   <Button
+    size="small"
+    onClick={() => {
+      navigation.navigate(`/component/blogView/${blog._id}`);
+    }}
+  >
+    View
+  </Button>
                     <Link href = "/component/blogEdit">
                        <Button size="small">Edit</Button>
                     </Link>

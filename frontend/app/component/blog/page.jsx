@@ -15,6 +15,20 @@ import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import Navbar from '../navbar/Navbar';
+
+function Copyright() {
+    return (
+      <Typography variant="body2" color="text.secondary" align="center">
+        {'Copyright © '}
+        <Link color="inherit" href="https://mui.com/">
+          Your Website
+        </Link>{' '}
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
+    );
+  }
 
 export default function Blog() {
   const [formData, setFormData] = useState({
@@ -57,7 +71,9 @@ const handleSubmit = async (e) => {
   
   
   return (
-    <Container component="main" maxWidth="xs">
+    <div>
+        <Navbar/>
+        <Container component="main" maxWidth="xs">
       <Box
         sx={{
           marginTop: 8,
@@ -116,5 +132,22 @@ const handleSubmit = async (e) => {
         </Box>
       </Box>
     </Container>
+    {/* footer */}
+    <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+        <Typography variant="h6" align="center" gutterBottom>
+          Footer
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="text.secondary"
+          component="p"
+        >
+          Something here to give the footer a purpose!
+        </Typography>
+        <Copyright />
+      </Box>
+    </div>
+    
   );
 }

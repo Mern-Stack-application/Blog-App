@@ -15,6 +15,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { Copyright } from '@mui/icons-material';
+import Navbar from '../navbar/Navbar';
 
 
 // TODO remove, this demo shouldn't need to reset the theme.
@@ -45,6 +46,7 @@ export default function SignUp() {
     };
   
     return (
+      
       <Container component="main" maxWidth="xs">
         <Box
           sx={{
@@ -115,6 +117,21 @@ export default function SignUp() {
             </Grid>
           </Box>
         </Box>
+        <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+        <Typography variant="h6" align="center" gutterBottom>
+          Footer
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="text.secondary"
+          component="p"
+        >
+          Something here to give the footer a purpose!
+        </Typography>
+        <Copyright />
+      </Box>
       </Container>
+      
     );
   }
